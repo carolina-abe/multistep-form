@@ -7,4 +7,6 @@ export const MainContainer = styled.div`
   padding: 0.875rem;
   background-color: ${colors.white};
   border-radius: 4px;
+  display: flex;
+  flex-direction: row;
 `

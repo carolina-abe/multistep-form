@@ -1,17 +1,18 @@
-import { Sidebar } from "../components/Sidebar";
-import { MainContainer } from "../styles/container";
-import GlobalStyle from "../styles/globalStyles";
+import { StepFormProvider } from "../contexts/StepFormContext"
+import { Sidebar } from "../components/Sidebar"
+import { StepContent } from "../components/StepContent"
+
+import { MainContainer } from "../styles/container"
+import GlobalStyle from "../styles/globalStyles"
 
 function App() {
   return (
     <MainContainer>
       <GlobalStyle />
-      <Sidebar steps={[
-        { description: 'YOUR INFO' },
-        { description: 'SELECT PLAN' },
-        { description: 'ADD-ONS' },
-        { description: 'SUMMARY' },
-      ]}/>
+      <StepFormProvider>
+        <Sidebar />
+        <StepContent />
+      </StepFormProvider>
     </MainContainer>
   )
 }
