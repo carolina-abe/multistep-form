@@ -1,5 +1,5 @@
 export type Step = {
-  description: string
+  title: string
   content: React.ReactNode
 }
   
