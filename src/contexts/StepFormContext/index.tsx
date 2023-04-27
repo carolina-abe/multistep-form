@@ -17,10 +17,10 @@ const StepFormContext = createContext<StepFormContext | null>(null)
 
 export const StepFormProvider = ({ children }: StepFormProvider) => {
   const defaultSteps: Steps = [
-    { title: 'YOUR INFO', content: <PersonalInfo /> },
-    { title: 'SELECT PLAN', content: <h1>Select plan</h1> },
-    { title: 'ADD-ONS', content: <h1>Addons</h1> },
-    { title: 'SUMMARY', content: <h1>Summary</h1> },
+    { title: 'Your info', content: <PersonalInfo /> },
+    { title: 'Select plan', content: <h1>Select plan</h1> },
+    { title: 'Adds on', content: <h1>Addons</h1> },
+    { title: 'Summary', content: <h1>Summary</h1> },
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)

@@ -1,6 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
- 
+
 const GlobalStyle = createGlobalStyle`
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   html {
     height: 100%;
   }
@@ -13,12 +19,14 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    font-family: Open-Sans, Helvetica, Sans-Serif;
-
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  body, input {
+    font-family: 'Ubuntu', Open-Sans, Helvetica, Sans-Serif;
   }
 
   code {
@@ -26,5 +34,5 @@ const GlobalStyle = createGlobalStyle`
   }
   
 `;
- 
+
 export default GlobalStyle;
